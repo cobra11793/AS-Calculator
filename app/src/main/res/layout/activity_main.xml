@@ -298,7 +298,7 @@
             android:layout_marginHorizontal="5dp"
             android:layout_weight="1"
             android:background="@drawable/round_button"
-            android:backgroundTint="#9AB1A0"
+            android:backgroundTint="#A3F4C5"
             android:text="="
             android:textSize="30sp" />
         />
