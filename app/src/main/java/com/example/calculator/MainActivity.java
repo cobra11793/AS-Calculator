@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
         percentButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                calculatorManager.addToEquation("%");
+                calculatorManager.addToEquation(" % ");
                 equationTextView.setText(calculatorManager.getInputEquation());
             }
         });
@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
         divideButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                calculatorManager.addToEquation("÷");
+                calculatorManager.addToEquation(" ÷ ");
                 equationTextView.setText(calculatorManager.getInputEquation());
             }
         });
@@ -168,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
         multiplyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                calculatorManager.addToEquation("×");
+                calculatorManager.addToEquation(" × ");
                 equationTextView.setText(calculatorManager.getInputEquation());
             }
         });
@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
         minusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                calculatorManager.addToEquation("-");
+                calculatorManager.addToEquation(" - ");
                 equationTextView.setText(calculatorManager.getInputEquation());
             }
         });
@@ -184,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
         plusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                calculatorManager.addToEquation("+");
+                calculatorManager.addToEquation(" + ");
                 equationTextView.setText(calculatorManager.getInputEquation());
             }
         });
@@ -215,7 +215,8 @@ public class MainActivity extends AppCompatActivity {
         backspaceButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                calculatorManager.deleteToEquation();
+                equationTextView.setText(calculatorManager.getInputEquation());
             }
         });
 
