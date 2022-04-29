@@ -18,3 +18,4 @@ Feel free to use my code as you please, and if you are able to build the parenth
 ![image](https://user-images.githubusercontent.com/49799668/165868105-9181c21b-9ba6-49d8-b697-551e9cb5f8da.png)
 
 
+Android Studio Calculator was released under the MIT license. See LICENSE for details
