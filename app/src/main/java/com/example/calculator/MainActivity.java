@@ -201,7 +201,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 calculatorManager.calculate();
-                equationTextView.setText(String.valueOf(calculatorManager.finalResult));
+                equationTextView.setText(calculatorManager.getInputEquation());
             }
         });
 
@@ -209,7 +209,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 calculatorManager.clearEquation();
-                equationTextView.setText("Enter Calculation...");
+                equationTextView.setText(calculatorManager.getInputEquation());
             }
         });
 
